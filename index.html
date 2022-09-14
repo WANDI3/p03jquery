@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calon Kosma TI-2022-C3</title>
+      <link rel="stylesheet" href="tampil.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <!--Data -->
+      <h1>Daftar Nama Calon Kosma TI-2022-C3</h1>
+      <table>
+        <tr>
+          <th>NO</th>
+          <th>Nama</th>
+          <th>NIM</th>
+          <th colspan="2">Aksi</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>Ahmad Bahar Sagita</th>
+          <th>41226063</th>
+          <td>Edit</td>
+          <td >Delete</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th>Muhammad Ismail Marzuki</th>
+          <th>41226084</th>
+          <td>Edit</td>
+          <td>Delete</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th>Rara Ayuningsih </th>
+          <th>41226125</th>
+          <td>Edit</td>
+          <td>Delete</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th>Ahmad Khapidin</th>
+          <th>41226150</th>
+          <td >Edit</td>
+          <td>Delete</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <th>Devi Intan Ayu Lestari</th>
+          <th>412260113</th>
+          <td>Edit</td>
+          <td>Delete</td>
+        </tr>
+      </table>
+      <div class="color">
+        <br><br><br><br><br><br><br><br>by Wandi<br>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    $(document).ready(() => {
+        $("td").click(function (event) {
+        alert("apa mau " +$(this).html() + "?");
+    });
+    
+    $("td").click(function (event) {
+      alert(" Maaf Tidak Bisa...! ");
+  });
+  $("th").click(function () {
+    confirm("Kamu Memilih " + $(this).html()+ " Mau Dirubah...?");
+    if (confirm) {
+        let nama;
+        let cal_nama = prompt("Silakan Rubah...? ");
+    }
+});
+    $("th").click(function (event) {
+        alert("Maaf Tidak Bisa Dirubah...!");
+    });
+});
+    </script>
+</head>
+<body>
